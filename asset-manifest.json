@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rate-testtask/static/css/main.6d5b2aed.css",
+    "main.js": "/rate-testtask/static/js/main.9a9cf5b7.js",
+    "index.html": "/rate-testtask/index.html",
+    "main.6d5b2aed.css.map": "/rate-testtask/static/css/main.6d5b2aed.css.map",
+    "main.9a9cf5b7.js.map": "/rate-testtask/static/js/main.9a9cf5b7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d5b2aed.css",
+    "static/js/main.9a9cf5b7.js"
+  ]
+}
