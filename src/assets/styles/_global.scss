@@ -20,6 +20,7 @@
 // Body Locked
 body {
   font-family: "Roboto", sans-serif;
+
   &.locked {
     overflow: hidden;
   }
@@ -35,4 +36,8 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+*:hover {
+  cursor: default;
 }

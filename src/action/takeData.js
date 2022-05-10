@@ -6,9 +6,6 @@ import {
   setLatestData,
 } from "../reducers/repReducer";
 
-// import { currentDate } from "./takeCurrentDate";
-// import { currentMonth } from "./takeCurrentMonth";
-
 export const takeData = () => {
   return async (dispatch) => {
     try {
@@ -28,11 +25,6 @@ export const takeData = () => {
 };
 
 export const takeLatestData = (code, date) => {
-  // const now = new Date();
-  // const currentDateTake = String(now.getDate());
-  // const currentMonthTake = String(1 + now.getMonth());
-  console.log(code, date);
-
   return async (dispatch) => {
     try {
       const apiUrl = `https://www.cbr-xml-daily.ru/archive/2022/02/12/daily_json.js`; // dispatch(setIsFetching(true));
@@ -43,11 +35,6 @@ export const takeLatestData = (code, date) => {
       console.log(response.data);
     } catch (e) {
       console.log(e, new Error("Ошибка запроса API!"));
-      // dispatch(setFetchError(true));
-      // dispatch(setIsFetching(false));
-      // setTimeout(() => {
-      //   dispatch(setIsFetching(false));
-      // }, 100);
     }
   };
 };

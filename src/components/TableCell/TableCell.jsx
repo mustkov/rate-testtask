@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const TableCell = ({ item, percent }) => {
   return (
     <div className="table__cell">
