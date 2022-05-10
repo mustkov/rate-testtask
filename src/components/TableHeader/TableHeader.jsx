@@ -4,7 +4,6 @@ const TableHeader = () => {
       <div className="table__cell">Name</div>
       <div className="table__cell">Value</div>
       <div className="table__cell">Previous</div>
-      {/* <div className="table__cell">Max Atmosphering Speed</div> */}
     </div>
   );
 };

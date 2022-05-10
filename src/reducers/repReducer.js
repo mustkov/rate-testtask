@@ -1,15 +1,22 @@
 const SET_REPOS = "SET_REPOS";
 const SET_IS_FETCHING = "SET_IS_FETCHING";
 const SET_FETCH_ERROR = "SET_FETCH_ERROR";
+const SET_LATEST_DATA = "SET_LATEST_DATA";
 
 const defaultStore = {
   isFetching: true,
   isFetchError: false,
   data: {},
+  latestData: {},
 };
 
 export default function repReducer(state = defaultStore, action) {
   switch (action.type) {
+    case SET_LATEST_DATA:
+      return {
+        ...state,
+        latestData: { ...action.payload },
+      };
     case SET_IS_FETCHING:
       return {
         ...state,
@@ -28,6 +35,7 @@ export default function repReducer(state = defaultStore, action) {
           Valute: Object.values(action.payload.Valute),
         },
       };
+
     default:
       return state;
   }
@@ -44,4 +52,8 @@ export const setIsFetching = (bool) => ({
 export const setFetchError = (bool) => ({
   type: SET_FETCH_ERROR,
   payload: bool,
+});
+export const setLatestData = (data) => ({
+  type: SET_LATEST_DATA,
+  payload: data,
 });
